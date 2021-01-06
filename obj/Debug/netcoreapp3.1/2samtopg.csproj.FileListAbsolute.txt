@@ -25,3 +25,4 @@ C:\Users\Bman\source\repos\Modstrom\2samtopg\obj\Debug\netcoreapp3.1\2samtopg.cs
 C:\Users\Bman\source\repos\Modstrom\2samtopg\obj\Debug\netcoreapp3.1\2samtopg.dll
 C:\Users\Bman\source\repos\Modstrom\2samtopg\obj\Debug\netcoreapp3.1\2samtopg.pdb
 C:\Users\Bman\source\repos\Modstrom\2samtopg\obj\Debug\netcoreapp3.1\2samtopg.genruntimeconfig.cache
+C:\Users\Bman\source\repos\Modstrom\2samtopg\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

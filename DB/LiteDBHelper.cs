@@ -9,7 +9,7 @@ namespace _2samtopg.DB
 {
     public class LiteDBHelper
     {
-        const string DBpath = @"C:\TempDeleteMe\Data.db"; // make sure c:\TempDeleteMe folder exists
+        const string DBpath = @"C:\TempDeleteMe\TEST.db"; // make sure c:\TempDeleteMe folder exists
         public List<Customer> GetAllCustomers()
         {
             // Open database (or create if doesn't exist)
@@ -62,6 +62,21 @@ namespace _2samtopg.DB
             {
                 // Get a collection (or create, if doesn't exist)
                 return db.GetCollection<Estate>("estates").FindById(_id);
+            }
+        }
+
+        public List<Estate> GetAllEstateByAddresses(string _streetname, string _housenumber,int _zipcode)
+        {
+            // Open database (or create if doesn't exist)
+            using (var db = new LiteDatabase(DBpath))
+            {
+                // Get a collection (or create, if doesn't exist)
+                return db.GetCollection<Estate>("estates").FindAll()
+                       .Where(e =>
+                       e.Streetname.Equals(_streetname) &&
+                       e.Housenumber.Equals(_housenumber) &&
+                       e.Zipcode.Equals(_zipcode)
+                       ).ToList();
             }
         }
 
