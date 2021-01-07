@@ -112,6 +112,7 @@ namespace _2samtopg.Controllers
                 if (MatchingEstates == null || MatchingEstates.Count < 1)
                 {
                     Console.WriteLine("Not found");
+                    return "Not found";
                 }
                 else
                 {
